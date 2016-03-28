@@ -1,0 +1,16 @@
+extends layout
+
+head
+
+block content
+  .row
+    .col-xs-12.col-md-6
+      form.form-horizontal(action="", id="colorForm", method="post", role="form")
+        .form-group
+          label.col-xs-10.col-sm-2.control-label(for="color") Enter color in hex
+          .col-xs-12.col-sm-10
+            input#name.form-control(name="color")
+        button.btn(id="colorBtn") Calculate colors
+
+  h2=header
+  p #{results}
